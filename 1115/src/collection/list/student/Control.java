@@ -68,6 +68,10 @@ public class Control {
 	}
 	
 	public void deleteShowInfo() {
+		if(stu.size() == 0) {
+			System.out.println("학생의 정보가 없습니다");
+			return;
+		}
 		System.out.println("===삭제할 정보의 학생====");
 		System.out.print("이름을 입력하시오 : ");
 		
@@ -100,6 +104,7 @@ public class Control {
 				break;
 			}
 		}
+		System.out.println("학생의 정보가 없습니다");
 		
 		
 	}
